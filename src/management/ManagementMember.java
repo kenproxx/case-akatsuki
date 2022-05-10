@@ -3,6 +3,7 @@ package management;
 import fileCSV.ReadAndWrite;
 import person.Member;
 
+import java.awt.*;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,7 @@ public class ManagementMember {
     }
 
     public List<Member> getMemberList() {
+
         return memberList;
     }
 

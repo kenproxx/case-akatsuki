@@ -3,16 +3,21 @@ package fileCSV;
 import management.ManagementMember;
 import person.Member;
 
-import java.awt.*;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+
+import Menu.Menu;
+
+import java.io.*;
 import java.util.List;
 import java.util.Scanner;
 
 public class ReadAndWrite {
+
     final String PATH_FILE_USER = "D:\\Java\\Module 2\\akatsuki\\management-akatsuki\\src\\fileCSV\\userlist.csv";
     final String PATH_FILE_ACCOUNT = "D:\\Java\\Module 2\\akatsuki\\management-akatsuki\\src\\fileCSV\\acclist.csv";
+    final String PATH_FILE_MISSION = "D:\\Java\\Module 2\\akatsuki\\management-akatsuki\\src\\fileCSV\\missionList.csv";
+
+    public ReadAndWrite() throws FileNotFoundException {
+    }
 
     public void readFile(List<Member> members) throws FileNotFoundException {
         FileReader fileReader = new FileReader(PATH_FILE_USER);
@@ -41,12 +46,43 @@ public class ReadAndWrite {
             String[] arr = line.split(",");
             if (arr[0].equals(user) && arr[1].equals(pass)) {
                 System.out.println("Login Success!");
-
             } else {
                 System.out.println("Account Not Found!");
             }
 
         }
     }
+    public boolean readAcc(String user) throws FileNotFoundException {
+        FileReader fileReader = new FileReader(PATH_FILE_USER);
+        Scanner scanner = new Scanner(fileReader);
+        scanner.nextLine();
+        while (scanner.hasNext()) {
+            String line = scanner.nextLine();
+            String[] arr = line.split(",");
+            if (arr[0].toLowerCase().equals(user) ) {
+                return true;
+            } else {
+                System.out.println("Account Not Found!");
+            }
 
+        }
+        return false;
+    }
+
+    public void readMissionList() throws FileNotFoundException {
+        FileReader fileReader = new FileReader(PATH_FILE_MISSION);
+        Scanner scanner = new Scanner(fileReader);
+
+        while (scanner.hasNext()) {
+            String line = scanner.nextLine();
+            System.out.println(line);
+
+        }
+    }
+    public void writeMissionList(String str) throws IOException {
+        FileWriter fileWriter = new FileWriter(PATH_FILE_MISSION,true);
+        fileWriter.write(str + "\n");
+
+        fileWriter.close();
+    }
 }

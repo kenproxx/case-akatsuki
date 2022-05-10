@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee79eaac-7d24-46ad-8508-42f5dd46a9c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management-akatsuki.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fileCSV/ReadAndWrite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/management/ManagementMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/person/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/person/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/person/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/person/People.java" afterDir="false" />
+    <list default="true" id="ee79eaac-7d24-46ad-8508-42f5dd46a9c0" name="Changes" comment="6/5">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileCSV/ReadAndWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileCSV/ReadAndWrite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/management/ManagementMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/management/ManagementMember.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -47,12 +40,21 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/Module 2/web-westlife&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="management-akatsuki" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ahihi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ahihi" />
       <module name="management-akatsuki" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -61,6 +63,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ahihi" />
       </list>
     </recent_temporary>
   </component>
@@ -74,8 +77,20 @@
       <updated>1651819511647</updated>
       <workItem from="1651819513384" duration="2693000" />
       <workItem from="1651822287215" duration="5978000" />
-      <workItem from="1651828367775" duration="3429000" />
+      <workItem from="1651828367775" duration="4982000" />
+      <workItem from="1652016339199" duration="649000" />
+      <workItem from="1652080376184" duration="2417000" />
+      <workItem from="1652144977423" duration="12318000" />
+      <workItem from="1652165895500" duration="9428000" />
     </task>
+    <task id="LOCAL-00001" summary="6/5">
+      <created>1651831840813</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651831840813</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,5 +106,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="6/5" />
+    <option name="LAST_COMMIT_MESSAGE" value="6/5" />
   </component>
 </project>
