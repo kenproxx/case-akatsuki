@@ -45,8 +45,6 @@ public class Member extends People{
         this.domestic = domestic;
     }
 
-
-
     public String level() {
         if (getLevel() == 1) {
             return "Gennin";

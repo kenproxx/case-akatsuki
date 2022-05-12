@@ -12,8 +12,8 @@ import java.util.Scanner;
 
 public class Menu {
     String str = "", noResult = "No Result!";
-    int choice, age,village,level;
-    String name,choice2, name2,domestic,skill, user,pass;
+    int choice, age, village, level;
+    String name, choice2, name2, domestic, skill, user, pass;
 
 
     Scanner scanner = new Scanner(System.in);
@@ -61,10 +61,12 @@ public class Menu {
                             System.out.println("Login Success!");
                             menuMember();
                         }
-                        System.out.println("Error!");
+
                     }
 
                 case SECOND_CHOICE:
+                    System.out.println("Coming Soon!");
+                    menuMain();
                     break;
                 default:
                     System.out.println(noResult);
@@ -79,7 +81,7 @@ public class Menu {
 
     public void menuMember() {
         str = """
-                
+                                
                 --- Member ---
                     1. Information
                     2. Mission
@@ -105,12 +107,12 @@ public class Menu {
             System.out.println("Error!");
             menuMember();
         }
-        }
+    }
 
     public void menuManager() throws IOException {
 
         str = """
-                
+                                
                 --- Manager ---
                     1. Add Member
                     2. Edit Member
@@ -130,6 +132,7 @@ public class Menu {
                     name = scanner.nextLine();
 
                     System.out.println("How old are you?");
+
                     age = scanner.nextInt();
                     System.out.println("Your village? \n" +
                             "1. Konoha \n" +
@@ -181,7 +184,7 @@ public class Menu {
                         System.out.println("Your skill?");
                         scanner.nextLine();
                         skill = scanner.nextLine();
-                        member.getMemberList().set(member.findByName(name2), new Member(name, age, village, domestic, level, skill));
+                        member.edit(name2, new Member(name, age, village, domestic, level, skill));
                         System.out.println("Edit member success!!!");
                     } else {
                         System.out.println(noResult);
@@ -198,7 +201,8 @@ public class Menu {
                         System.out.println("Are you sure delete? y/n");
                         name = scanner.nextLine();
                         if (name.toLowerCase().equals("y")) {
-                            member.getMemberList().remove(index);
+
+                            member.delete(name2);
                             System.out.println("Delete Member Success!");
                         } else {
                             System.out.println("Cancel Success!");
@@ -230,13 +234,14 @@ public class Menu {
             }
         } catch (Exception e) {
             System.out.println("Error!");
+            scanner.nextLine();
             menuManager();
         }
-        }
+    }
 
     public void menuCustomer() throws IOException {
         str = """
-                
+                                
                 --- Customer ---
                     1. Request Mission
                     2. Logout
@@ -250,7 +255,7 @@ public class Menu {
                     scanner.nextLine();
                     System.out.println("Enter the mission you want we to do!");
                     String mission = scanner.nextLine();
-                    readAndWrite.writeMissionList(mission);
+                    readAndWrite.writeMissionList(mission + ",0");
                     System.out.println("Request Success!");
                     menuCustomer();
                     break;
@@ -259,10 +264,12 @@ public class Menu {
                     break;
                 default:
                     System.out.println(noResult);
+                    menuCustomer();
             }
         } catch (Exception e) {
             System.out.println("Error!");
+            scanner.nextLine();
             menuCustomer();
         }
-        }
+    }
 }

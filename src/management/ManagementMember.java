@@ -5,6 +5,7 @@ import person.Member;
 
 import java.awt.*;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,12 +29,14 @@ public class ManagementMember {
         memberList.add(member);
     }
 
-    public void edit(String name, Member member) {
+    public void edit(String name, Member member) throws IOException {
         memberList.set(findByName(name), member);
+        readAndWrite.writeFile(memberList);
     }
 
-    public void delete(String name) {
+    public void delete(String name) throws IOException {
         memberList.remove(findByName(name));
+        readAndWrite.writeFile(memberList);
     }
 
     public int findByName(String name) {

@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee79eaac-7d24-46ad-8508-42f5dd46a9c0" name="Changes" comment="6/5">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="ee79eaac-7d24-46ad-8508-42f5dd46a9c0" name="Changes" comment="10/5">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fileCSV/ReadAndWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileCSV/ReadAndWrite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/management/ManagementMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/management/ManagementMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/person/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/person/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/person/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/person/Member.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +45,11 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Java/Module 2/web-westlife&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RunManager" selected="Application.Main">
@@ -81,7 +88,10 @@
       <workItem from="1652016339199" duration="649000" />
       <workItem from="1652080376184" duration="2417000" />
       <workItem from="1652144977423" duration="12318000" />
-      <workItem from="1652165895500" duration="9428000" />
+      <workItem from="1652165895500" duration="10305000" />
+      <workItem from="1652232911833" duration="9586000" />
+      <workItem from="1652276029878" duration="1601000" />
+      <workItem from="1652318325519" duration="365000" />
     </task>
     <task id="LOCAL-00001" summary="6/5">
       <created>1651831840813</created>
@@ -90,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651831840813</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="10/5">
+      <created>1652176559716</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652176559716</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +126,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="6/5" />
-    <option name="LAST_COMMIT_MESSAGE" value="6/5" />
+    <MESSAGE value="10/5" />
+    <option name="LAST_COMMIT_MESSAGE" value="10/5" />
   </component>
 </project>
