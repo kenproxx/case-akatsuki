@@ -130,9 +130,7 @@ public class Menu {
                     System.out.println("What is your name?");
                     scanner.nextLine();
                     name = scanner.nextLine();
-
                     System.out.println("How old are you?");
-
                     age = scanner.nextInt();
                     System.out.println("Your village? \n" +
                             "1. Konoha \n" +
