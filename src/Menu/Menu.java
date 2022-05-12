@@ -127,32 +127,9 @@ public class Menu {
             choice = scanner.nextInt();
             switch (choice) {
                 case FIRST_CHOICE:
-                    System.out.println("What is your name?");
                     scanner.nextLine();
-                    name = scanner.nextLine();
-                    System.out.println("How old are you?");
-                    age = scanner.nextInt();
-                    System.out.println("Your village? \n" +
-                            "1. Konoha \n" +
-                            "2. Kiri \n" +
-                            "3. Suna \n" +
-                            "4. Iwa \n" +
-                            "5. Kumo \n");
-                    village = scanner.nextInt();
-                    System.out.println("Your clan?");
-                    scanner.nextLine();
-                    domestic = scanner.nextLine();
-                    System.out.println("Your level? \n" +
-                            "1. Gennin \n" +
-                            "2. Chunin \n" +
-                            "3. Jounin \n");
-                    level = scanner.nextInt();
-                    System.out.println("Your skill?");
-                    scanner.nextLine();
-                    skill = scanner.nextLine();
-                    System.out.println("Add member success!!!");
-                    member.getMemberList().add(new Member(name, age, village, domestic, level, skill));
-
+                    member.add(addMember());
+                    System.out.println("Add Member Success!");
                     menuManager();
                     break;
                 case SECOND_CHOICE:
@@ -160,30 +137,8 @@ public class Menu {
                     System.out.println("Enter the name to find?");
                     name2 = scanner.nextLine();
                     if (member.findByName(name2) != -1) {
-                        System.out.println("What is your name?");
-                        name = scanner.nextLine();
-                        System.out.println("How old are you?");
-                        age = scanner.nextInt();
-                        System.out.println("Your village? \n" +
-                                "1. Konoha \n" +
-                                "2. Kiri \n" +
-                                "3. Suna \n" +
-                                "4. Iwa \n" +
-                                "5. Kumo \n");
-                        village = scanner.nextInt();
-                        System.out.println("Your clan?");
-                        scanner.nextLine();
-                        domestic = scanner.nextLine();
-                        System.out.println("Your level? \n" +
-                                "1. Gennin \n" +
-                                "2. Chunin \n" +
-                                "3. Jounin \n");
-                        level = scanner.nextInt();
-                        System.out.println("Your skill?");
-                        scanner.nextLine();
-                        skill = scanner.nextLine();
-                        member.edit(name2, new Member(name, age, village, domestic, level, skill));
-                        System.out.println("Edit member success!!!");
+                        member.edit(name2,addMember());
+                        System.out.println("Edit Member Success!");
                     } else {
                         System.out.println(noResult);
                     }
@@ -270,4 +225,34 @@ public class Menu {
             menuCustomer();
         }
     }
+
+    public Member addMember() {
+        System.out.println("What is your name?");
+        name = scanner.nextLine();
+        System.out.println("How old are you?");
+        age = scanner.nextInt();
+        do {System.out.println("Your village? \n" +
+                "1. Konoha \n" +
+                "2. Kiri \n" +
+                "3. Suna \n" +
+                "4. Iwa \n" +
+                "5. Kumo \n");
+            village = scanner.nextInt();
+        } while (village < 1 || village > 5);
+        System.out.println("Your clan?");
+        scanner.nextLine();
+        domestic = scanner.nextLine();
+        do {
+            System.out.println("Your level? \n" +
+                    "1. Gennin \n" +
+                    "2. Chunin \n" +
+                    "3. Jounin \n");
+            level = scanner.nextInt();
+        } while (level < 1 || level > 3);
+        System.out.println("Your skill?");
+        scanner.nextLine();
+        skill = scanner.nextLine();
+        return new Member(name, age, village, domestic, level, skill);
+    }
 }
+

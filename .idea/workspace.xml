@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee79eaac-7d24-46ad-8508-42f5dd46a9c0" name="Changes" comment="11/5">
+    <list default="true" id="ee79eaac-7d24-46ad-8508-42f5dd46a9c0" name="Changes" comment="12/5">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/management/ManagementMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/management/ManagementMember.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +86,7 @@
       <workItem from="1652165895500" duration="10305000" />
       <workItem from="1652232911833" duration="9586000" />
       <workItem from="1652276029878" duration="1601000" />
-      <workItem from="1652318325519" duration="696000" />
+      <workItem from="1652318325519" duration="2932000" />
     </task>
     <task id="LOCAL-00001" summary="6/5">
       <created>1651831840813</created>
@@ -107,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652318724142</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="12/5">
+      <created>1652319049454</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652319049454</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +137,7 @@
     <MESSAGE value="6/5" />
     <MESSAGE value="10/5" />
     <MESSAGE value="11/5" />
-    <option name="LAST_COMMIT_MESSAGE" value="11/5" />
+    <MESSAGE value="12/5" />
+    <option name="LAST_COMMIT_MESSAGE" value="12/5" />
   </component>
 </project>

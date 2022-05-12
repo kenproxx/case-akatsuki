@@ -25,8 +25,9 @@ public class ManagementMember {
         return memberList;
     }
 
-    public void add(Member member) {
+    public void add(Member member) throws IOException {
         memberList.add(member);
+        readAndWrite.writeFile(memberList);
     }
 
     public void edit(String name, Member member) throws IOException {
